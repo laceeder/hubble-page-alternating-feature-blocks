@@ -1,0 +1,668 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+    ========================================================================== */
+
+    /* Mobile and Base Styles */
+
+    html {
+      font-size: 18px;
+      box-sizing: border-box;
+      min-width: 374px;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      background: hsl(193, 100%, 96%);
+    }
+
+    header {
+      background-image: url(../images/bg-hero-mobile.svg);
+      background-color: hsl(193, 100%, 96%);
+      background-repeat: no-repeat;
+    }
+
+    .header-area {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    header nav img {
+      max-width: 50%;
+    }
+
+    header .try-it {
+      background: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: 50px;
+      font-weight: 700;
+      color: hsl(192, 100%, 9%);
+      box-shadow: 9px 6px 11px 3px hsl(201, 40%, 92%);
+      padding: 4.8px 11.2px;
+    }
+
+    header .try-it a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.7222em;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    nav .try-it a:hover {
+      color: hsl(208, 11%, 55%);
+    }
+
+    .hero-section {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .title-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 64px 12.8px 44px 12.8px;
+    }
+
+    .hero-title .main-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 0 0 24px 0;
+      text-transform: capitalize;
+    }
+
+    .hero-title .main-description {
+      font-size: 0.9em;
+      font-weight: 400;
+      margin-bottom: 1.5em;
+    }
+
+    .get-started {
+      background: hsl(322, 100%, 66%);
+      border: none;
+      border-radius: 50px;
+      box-shadow: 2px 9px 9px 0 hsl(201, 40%, 92%);
+      padding: 11.2px 40px;
+      margin-bottom: 24px;
+    }
+
+    .get-started a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.6667em;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    .get-started:hover {
+      background-color: hsl(300, 69%, 71%);
+    }
+
+    .mockup-image img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 41px;
+    }
+
+    .content-wrapper {
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 7.5vh;
+      padding: 60px 0;
+    }
+
+    .grow-together-card img, .flowing-conversations-card img, .your-users-card img,
+    .build-community-card img {
+      max-width: 80%;
+    }
+
+    main {
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px 0 153px 0;
+    }
+
+    .cards {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .grow-together-card, .flowing-conversations-card, .your-users-card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 15px;
+      box-shadow: 0 0 8px 3px hsl(0, 0%, 96%);
+      margin: 48px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 64px;
+      text-align: center;
+      padding: 54.4px 24px 0 24px;
+    }
+
+    .grow-together-card .card-description {
+      margin: 0 16px 35px 16px;
+    }
+
+    .flowing-conversations-card .card-description {
+      margin: 0 18px 35px 18px;
+    }
+
+    .your-users-card .card-description {
+      margin: 0 22px 35px 22px;
+    }
+
+    .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1667em;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: capitalize;
+    }
+
+    .card-description {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.8333em;
+      font-weight: 400;
+      color: hsl(208, 11%, 55%);
+    }
+
+    footer {
+      background-color: hsl(192, 100%, 9%);
+    }
+
+    .footer-wrapper {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .footer-area {
+      position: relative;
+      padding: 0;
+    }
+
+    .build-community-card {
+      width: 317px;
+      height: 130px;
+      text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-303px);
+      background: hsl(0, 0%, 100%);
+      box-shadow: 0 -5px 5px 0 hsl(0, 0%, 96%);
+      border-radius: 15px;
+      padding: 24px 19px;
+      margin: -233px -174px;
+    }
+
+    .community-card-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.0625em;
+      text-align: center;
+      margin: 30px 0 28px 0;
+      text-transform: capitalize;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      padding: 162px 0 32px 0;
+    }
+
+    .filter-white {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(120deg) brightness(104%) contrast(101%);
+      width: 150px;
+      margin-bottom: 25px;
+    }
+
+    .footer-content .contact-info {
+      color: hsl(0, 0%, 100%);
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .contact-info img {
+      margin: 4.8px 16px auto 0;
+    }
+
+    .location-info, .phone-info, .email-info {
+      font-size: 0.9375em;
+      margin: 0 16px;
+    }
+
+    .footer-content .links-center {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 48px 0;
+    }
+
+    .footer-content .links-nav a {
+      width: 120px;
+      display: block;
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-content .social-media-right {
+      text-align: center;
+    }
+
+    .footer-content .social-media-right a {
+      width: 20px;
+      color: hsl(0, 0%, 100%);
+      padding: 6.4px 8px;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 60px;
+      display: inline-block;
+      margin: 0 0 16px 4.8px;
+    }
+
+    .footer-content .social-media-right a:hover {
+      color: hsl(208, 11%, 55%);
+    }
+
+    .social-media-right .copyright {
+      color:hsl(0, 0%, 100%);
+      font-size: 0.6667em;
+    }
+    
+
+
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+   .hidden,
+   [hidden] {
+     display: none !important;
+   }
+   
+   /*
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    */
+   
+   .sr-only {
+     border: 0;
+     clip: rect(0, 0, 0, 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     /* 1 */
+   }
+   
+   /*
+    * Extends the .sr-only class to allow the element
+    * to be focusable when navigated to via the keyboard:
+    * https://www.drupal.org/node/897638
+    */
+   
+   .sr-only.focusable:active,
+   .sr-only.focusable:focus {
+     clip: auto;
+     height: auto;
+     margin: 0;
+     overflow: visible;
+     position: static;
+     white-space: inherit;
+     width: auto;
+   }
+   
+   /*
+    * Hide visually and from screen readers, but maintain layout
+    */
+   
+   .invisible {
+     visibility: hidden;
+   }
+   
+   /*
+    * Clearfix: contain floats
+    *
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    `contenteditable` attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that receive the `clearfix` class.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
+   
+   .clearfix::before,
+   .clearfix::after {
+     content: " ";
+     display: table;
+   }
+   
+   .clearfix::after {
+     clear: both;
+   }
+   
+   /* ==========================================================================
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+      ========================================================================== */
+   
+   @media only screen and (min-width: 1440px) {
+     /*Desktop styles*/
+
+     header {
+      background-image: url('../images/bg-hero-desktop.svg');
+     }
+
+     .header-area {
+      max-width: 85%;
+     }
+
+     header nav {
+      padding: 35px 0 0 0;
+     }
+
+     header nav img {
+      max-width: 70%;
+     }
+
+     header .try-it {
+      padding: 10px 60px;
+     }
+
+     header .try-it a {
+      font-size: 0.6667em;
+     }
+
+     .title-description {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 0 12.8px 44px 12.8px;
+     }
+
+     .hero-title .main-title {
+      font-size: 1.8889em;
+      margin: 50px 172px 25px 20px;
+      word-spacing: 0.075em;
+     }
+
+     .hero-title .main-description {
+      font-size: 0.80556em;
+      margin: 0 132px 25px 20px;
+      word-spacing: 0.075em;
+     }
+
+     .mockup-image img {
+      max-width: 100%;
+      margin: 41px 20px 0 0;
+     }
+
+     .title-description .hero-title {
+      flex-basis: 45%;
+     }
+
+     .title-description .mockup-image {
+      flex-basis: 55%;
+     }
+
+     .hero-title .get-started {
+      margin: 0 0 24px 15px;
+      padding: 11.2px 56px;
+     }
+
+     .hero-title .get-started a {
+      font-weight: 400;
+     }
+
+     .grow-together-card, .flowing-conversations-card, .your-users-card {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 48px;
+      text-align: start;
+      padding: 40px 16px 40px 80px;
+      column-gap: 80px;
+     }
+
+     .card-title {
+      font-size: 1.3333em;
+     }
+
+     .grow-together-card .card-description, .flowing-conversations-card .card-description,
+     .your-users-card .card-description {
+      font-size: 0.8889em;
+     }
+
+     .grow-together-card .card-title {
+      margin-left: 20px;
+     }
+
+     .grow-together-card .card-description {
+      margin: 0 108px 35px 20px;
+     }
+
+     .grow-together-card .card-info, .your-users-card .card-info {
+      order: -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     }
+
+     .grow-together-card .card-image, .your-users-card .card-image {
+      text-align: end;
+      max-width: 92%;
+     }
+
+     .flowing-conversations-card .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+     }
+
+     .flowing-conversations-card .card-image {
+      text-align: start;
+     }
+
+     .flowing-conversations-card .card-title {
+      margin: 0 34px 15px 85px;
+     }
+
+     .flowing-conversations-card .card-description {
+      margin: 0 34px 35px 85px;
+     }
+
+     .your-users-card .card-info {
+      margin-top: 20px;
+     }
+
+     .your-users-card .card-title {
+      margin: 0 0 15px 22px;
+     }
+
+     .your-users-card .card-description {
+      margin: 0 100px 35px 22px;
+     }
+
+     .build-community-card {
+      width: 50%;
+      height: 28%;
+      left: 39%;
+      top: 71%;
+     }
+
+     .build-community-card .community-card-title {
+      font-size: 1.3611em;
+     }
+
+     .get-started {
+      padding: 21px 95px;
+     }
+
+     .get-started a {
+      font-size: 0.8889em;
+     }
+
+     .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 96px 0 32px 0;
+     }
+
+     .contact-left {
+      flex-basis: 35%;
+      margin: 0 32px 0 50px;
+     }
+
+     .filter-white {
+      width: 155px;
+     }
+
+     .footer-content .contact-info {
+      font-size: 0.8333em;
+     }
+
+     .location-info {
+      margin: 0 80px 0 23px;
+     }
+
+     .footer-content .links-center {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 48px;
+      font-size: 0.8889em;
+      margin-right: 32px;
+     }
+
+     .footer-content .social-media-right {
+      text-align: left;
+      padding-top: 160px;
+     }
+
+     .footer-content .social-media-right a {
+      width: 10px;
+      padding: 2px 13px 2px 8px;
+     }
+
+     .social-media-right .copyright {
+      margin-top: 220px;
+     }
+
+     .social-media-right .copyright p {
+      margin: 0;
+     }
+
+    }
