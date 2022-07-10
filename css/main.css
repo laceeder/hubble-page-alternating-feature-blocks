@@ -733,12 +733,12 @@
      }
 
      header .try-it {
-      padding: 8px 55px;
+      padding: 0.444rem 3.056rem;
      }
 
      .hero-title .main-description {
       font-size: 0.8333em;
-      margin: 0 106px 25px 20px;
+      margin: 0 5.889rem 1.389rem 1.111rem;
      }
 
      .mockup-image img {
@@ -746,8 +746,8 @@
      }
 
      .hero-title .get-started {
-      margin: 0 310px 24px 20px;
-      padding: 10px 52px 15px;
+      margin: 0 17.222rem 1.333rem 1.111rem;
+      padding: 0.556rem 2.889rem 0.833rem;
      }
 
      .hero-title .get-started a {
