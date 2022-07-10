@@ -89,10 +89,16 @@
 
     /* Mobile and Base Styles */
 
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     html {
       font-size: 18px;
       box-sizing: border-box;
-      min-width: 374px;
+      min-width: 359px;
       margin: 0;
       padding: 0;
     }
@@ -119,7 +125,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 0;
+      padding: 0.889rem 0;
     }
 
     header nav img {
@@ -129,16 +135,16 @@
     header .try-it {
       background: hsl(0, 0%, 100%);
       border: none;
-      border-radius: 50px;
+      border-radius: 2.778rem;
       font-weight: 700;
       color: hsl(192, 100%, 9%);
-      box-shadow: 9px 6px 11px 3px hsl(201, 40%, 92%);
-      padding: 4.8px 11.2px;
+      box-shadow: 0.5rem 0.333rem 0.611rem 0.167rem hsl(201, 40%, 92%);
+      padding: 0.267rem 0.622rem;
     }
 
     header .try-it a {
       font-family: 'Poppins', sans-serif;
-      font-size: 0.7222em;
+      font-size: 0.6667em;
       text-decoration: none;
       text-transform: capitalize;
     }
@@ -157,30 +163,30 @@
       flex-direction: column;
       justify-content: space-between;
       text-align: center;
-      padding: 64px 12.8px 44px 12.8px;
+      padding: 3.556rem 0.711rem 2.444rem 0.711rem;
     }
 
     .hero-title .main-title {
       font-family: 'Poppins', sans-serif;
       font-size: 1.5em;
       font-weight: 600;
-      margin: 0 0 24px 0;
+      margin: 0 0 1.333rem 0;
       text-transform: capitalize;
     }
 
     .hero-title .main-description {
       font-size: 0.9em;
       font-weight: 400;
-      margin-bottom: 1.5em;
+      margin: 0 0 1.5rem 0;
     }
 
     .get-started {
       background: hsl(322, 100%, 66%);
       border: none;
-      border-radius: 50px;
-      box-shadow: 2px 9px 9px 0 hsl(201, 40%, 92%);
-      padding: 11.2px 40px;
-      margin-bottom: 24px;
+      border-radius: 2.778rem;
+      box-shadow: 0.111rem 0.5rem 0.5rem 0 hsl(201, 40%, 92%);
+      padding: 0.622rem 2.222rem;
+      margin: 0 0 1.333rem 0;
     }
 
     .get-started a {
@@ -199,7 +205,7 @@
     .mockup-image img {
       max-width: 90%;
       height: auto;
-      margin-top: 41px;
+      margin: 2.278rem 0 0 0;
     }
 
     .content-wrapper {
@@ -207,7 +213,7 @@
       display: flex;
       flex-direction: column;
       gap: 7.5vh;
-      padding: 60px 0;
+      padding: 3.333rem 0;
     }
 
     .grow-together-card img, .flowing-conversations-card img, .your-users-card img,
@@ -217,7 +223,7 @@
 
     main {
       background-color: hsl(0, 0%, 100%);
-      padding: 20px 0 153px 0;
+      padding: 1.111rem 0 8.5rem 0;
     }
 
     .cards {
@@ -227,33 +233,33 @@
 
     .grow-together-card, .flowing-conversations-card, .your-users-card {
       background-color: hsl(0, 0%, 100%);
-      border-radius: 15px;
-      box-shadow: 0 0 8px 3px hsl(0, 0%, 96%);
-      margin: 48px 0;
+      border-radius: 0.833rem;
+      box-shadow: 0 0 0.444rem 0.167rem hsl(0, 0%, 96%);
+      margin: 2.667rem 0;
       display: grid;
       grid-template-columns: 1fr;
-      grid-row-gap: 64px;
+      grid-row-gap: 3.556rem;
       text-align: center;
-      padding: 54.4px 24px 0 24px;
+      padding: 3.022rem 1.333rem 0;
     }
 
     .grow-together-card .card-description {
-      margin: 0 16px 35px 16px;
+      margin: 0 0.889rem 1.944rem;
     }
 
     .flowing-conversations-card .card-description {
-      margin: 0 18px 35px 18px;
+      margin: 0 1rem 1.944rem;
     }
 
     .your-users-card .card-description {
-      margin: 0 22px 35px 22px;
+      margin: 0 1.222rem 1.944rem;
     }
 
     .card-title {
       font-family: 'Poppins', sans-serif;
       font-size: 1.1667em;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin: 0 0 0.889rem 0;
       text-transform: capitalize;
     }
 
@@ -279,8 +285,8 @@
     }
 
     .build-community-card {
-      width: 317px;
-      height: 130px;
+      width: 16.556rem;
+      height: 7.222rem;
       text-align: center;
       display: flex;
       flex-flow: column nowrap;
@@ -291,60 +297,60 @@
       left: 50%;
       transform: translateY(-303px);
       background: hsl(0, 0%, 100%);
-      box-shadow: 0 -5px 5px 0 hsl(0, 0%, 96%);
-      border-radius: 15px;
-      padding: 24px 19px;
-      margin: -233px -174px;
+      box-shadow: 0 -0.278rem 0.278rem 0 hsl(0, 0%, 96%);
+      border-radius: 0.833rem;
+      padding: 1.333rem 0.889rem;
+      margin: -12.944rem -9.167rem;
     }
 
     .community-card-title {
       font-family: 'Poppins', sans-serif;
       font-size: 1.0625em;
       text-align: center;
-      margin: 30px 0 28px 0;
+      margin: 1.667rem 0 1.556rem 0;
       text-transform: capitalize;
     }
 
     .footer-content {
       display: flex;
       flex-direction: column;
-      padding: 162px 0 32px 0;
+      padding: 9rem 0 1.778rem 0;
     }
 
     .filter-white {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(120deg) brightness(104%) contrast(101%);
-      width: 150px;
-      margin-bottom: 25px;
+      width: 8.333rem;
+      margin: 0 0 1.389rem 0;
     }
 
     .footer-content .contact-info {
       color: hsl(0, 0%, 100%);
       display: flex;
       align-items: center;
-      margin-bottom: 16px;
+      margin: 0 0 0.889rem 0;
     }
 
     .contact-info img {
-      margin: 4.8px 16px auto 0;
+      margin: 0.267rem 0.889rem auto 0;
     }
 
     .location-info, .phone-info, .email-info {
       font-size: 0.9375em;
-      margin: 0 16px;
+      margin: 0 0.889rem;
     }
 
     .footer-content .links-center {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 48px 0;
+      margin: 2.667rem 0;
     }
 
     .footer-content .links-nav a {
-      width: 120px;
+      width: 6.667rem;
       display: block;
       color: hsl(0, 0%, 100%);
       text-decoration: none;
-      margin-bottom: 16px;
+      margin: 0 0 0.889rem 0;
     }
 
     .footer-content .social-media-right {
@@ -352,13 +358,13 @@
     }
 
     .footer-content .social-media-right a {
-      width: 20px;
+      width: 1.111rem;
       color: hsl(0, 0%, 100%);
-      padding: 6.4px 8px;
+      padding: 0.356rem 0.444rem;
       border: 1px solid hsl(0, 0%, 100%);
-      border-radius: 60px;
+      border-radius: 3.333rem;
       display: inline-block;
-      margin: 0 0 16px 4.8px;
+      margin: 0 0 0.889rem 0.267rem;
     }
 
     .footer-content .social-media-right a:hover {
@@ -459,210 +465,294 @@
       These examples override the primary ('mobile first') styles.
       Modify as content requires.
       ========================================================================== */
-   
-   @media only screen and (min-width: 1440px) {
-     /*Desktop styles*/
-
-     header {
-      background-image: url('../images/bg-hero-desktop.svg');
-     }
-
-     .header-area {
-      max-width: 85%;
-     }
-
-     header nav {
-      padding: 35px 0 0 0;
-     }
-
-     header nav img {
-      max-width: 70%;
-     }
+    
+    @media only screen and (min-width: 760px) {
+     /*Tablet styles*/
 
      header .try-it {
-      padding: 10px 60px;
-     }
-
-     header .try-it a {
-      font-size: 0.6667em;
-     }
-
-     .title-description {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      padding: 0 12.8px 44px 12.8px;
-     }
-
-     .hero-title .main-title {
-      font-size: 1.8889em;
-      margin: 50px 172px 25px 20px;
-      word-spacing: 0.075em;
+      padding: 0.267rem 1.056rem;
      }
 
      .hero-title .main-description {
-      font-size: 0.80556em;
-      margin: 0 132px 25px 20px;
-      word-spacing: 0.075em;
-     }
-
-     .mockup-image img {
-      max-width: 100%;
-      margin: 41px 20px 0 0;
-     }
-
-     .title-description .hero-title {
-      flex-basis: 45%;
-     }
-
-     .title-description .mockup-image {
-      flex-basis: 55%;
+      margin: 0 3.111rem 1.5rem;
      }
 
      .hero-title .get-started {
-      margin: 0 0 24px 15px;
-      padding: 11.2px 56px;
+      margin: 0 5.944rem 1.333rem;
      }
 
-     .hero-title .get-started a {
-      font-weight: 400;
+     .mockup-image img {
+      max-width: 85%;
      }
 
-     .grow-together-card, .flowing-conversations-card, .your-users-card {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 48px;
-      text-align: start;
-      padding: 40px 16px 40px 80px;
-      column-gap: 80px;
+     .grow-together-card img, .flowing-conversations-card img, .your-users-card img,
+     .build-community-card img {
+      max-width: 75%;
      }
 
      .card-title {
       font-size: 1.3333em;
      }
 
-     .grow-together-card .card-description, .flowing-conversations-card .card-description,
-     .your-users-card .card-description {
-      font-size: 0.8889em;
-     }
-
-     .grow-together-card .card-title {
-      margin-left: 20px;
-     }
-
      .grow-together-card .card-description {
-      margin: 0 108px 35px 20px;
-     }
-
-     .grow-together-card .card-info, .your-users-card .card-info {
-      order: -1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-     }
-
-     .grow-together-card .card-image, .your-users-card .card-image {
-      text-align: end;
-      max-width: 92%;
-     }
-
-     .flowing-conversations-card .card-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 20px;
-     }
-
-     .flowing-conversations-card .card-image {
-      text-align: start;
-     }
-
-     .flowing-conversations-card .card-title {
-      margin: 0 34px 15px 85px;
+      margin: 0 3.167rem 1.944rem;
      }
 
      .flowing-conversations-card .card-description {
-      margin: 0 34px 35px 85px;
-     }
-
-     .your-users-card .card-info {
-      margin-top: 20px;
-     }
-
-     .your-users-card .card-title {
-      margin: 0 0 15px 22px;
+      margin: 0 3.556rem 1.944rem;
      }
 
      .your-users-card .card-description {
-      margin: 0 100px 35px 22px;
+      margin: 0 4.333rem 1.944rem;
      }
 
      .build-community-card {
-      width: 50%;
-      height: 28%;
-      left: 39%;
-      top: 71%;
-     }
-
-     .build-community-card .community-card-title {
-      font-size: 1.3611em;
-     }
-
-     .get-started {
-      padding: 21px 95px;
-     }
-
-     .get-started a {
-      font-size: 0.8889em;
-     }
-
-     .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 96px 0 32px 0;
-     }
-
-     .contact-left {
-      flex-basis: 35%;
-      margin: 0 32px 0 50px;
-     }
-
-     .filter-white {
-      width: 155px;
-     }
-
-     .footer-content .contact-info {
-      font-size: 0.8333em;
+      width: 22.222rem;
+      margin: -11.889rem -10.611rem;
      }
 
      .location-info {
-      margin: 0 80px 0 23px;
+      margin: 0 8.167rem 0 0.889rem;
+     }
+    }
+
+    @media only screen and (min-width: 1220px) {
+      /*Laptop styles*/
+ 
+      header {
+       background-image: url('../images/bg-hero-desktop.svg');
+      }
+ 
+      .header-area {
+       max-width: 90%;
+       margin: 0 5rem;
+      }
+ 
+      header nav {
+       padding: 1.944rem 0 0 0;
+      }
+ 
+      header nav img {
+       max-width: 70%;
+      }
+ 
+      header .try-it {
+       padding: 0.556rem 3.333rem;
+      }
+ 
+      header .try-it a {
+       font-size: 0.6667em;
+      }
+ 
+      .title-description {
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       text-align: left;
+       padding: 0 0.667rem 2.444rem;
+      }
+ 
+      .hero-title .main-title {
+       font-size: 1.8889em;
+       margin: 2.778rem 1.111rem 1.389rem;
+       word-spacing: 0.075em;
+      }
+ 
+      .hero-title .main-description {
+       font-size: 0.80556em;
+       margin: 0 1.778rem 1.389rem 1.111rem;
+       word-spacing: 0.075em;
+      }
+ 
+      .mockup-image img {
+       max-width: 95%;
+       margin: 2.278rem 1.111rem 0;
+      }
+ 
+      .title-description .hero-title {
+       flex-basis: 45%;
+      }
+ 
+      .title-description .mockup-image {
+       flex-basis: 55%;
+      }
+ 
+      .hero-title .get-started {
+       margin: 0 12.778rem 1.333rem 1.111rem;
+       padding: 0.611rem 3.111rem 0.833rem;
+      }
+ 
+      .hero-title .get-started a {
+       font-size: 0.6667em;
+       font-weight: 700;
+      }
+ 
+      .grow-together-card, .flowing-conversations-card, .your-users-card {
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 2.667rem;
+       text-align: start;
+       padding: 2.222rem 0.889rem 2.222rem 4.444rem;
+       column-gap: 4.444rem;
+      }
+ 
+      .card-title {
+       font-size: 1.3333em;
+      }
+ 
+      .grow-together-card .card-description, .flowing-conversations-card .card-description,
+      .your-users-card .card-description {
+       font-size: 0.8889em;
+      }
+ 
+      .grow-together-card .card-title {
+       margin: 0 0 0 1.111rem;
+      }
+ 
+      .grow-together-card .card-description {
+       margin: 0 6rem 1.944rem 1.111rem;
+      }
+ 
+      .grow-together-card .card-info, .your-users-card .card-info {
+       order: -1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+      }
+ 
+      .grow-together-card .card-image, .your-users-card .card-image {
+       text-align: end;
+       max-width: 92%;
+      }
+ 
+      .flowing-conversations-card .card-info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin: 1.111rem 0 0 0;
+      }
+ 
+      .flowing-conversations-card .card-image {
+       text-align: start;
+      }
+ 
+      .flowing-conversations-card .card-title {
+       margin: 0 1.889rem 0.833rem 4.722rem;
+      }
+ 
+      .flowing-conversations-card .card-description {
+       margin: 0 1.889rem 1.944rem 4.722rem;
+      }
+ 
+      .your-users-card .card-info {
+       margin: 1.111rem 0 0 0;
+      }
+ 
+      .your-users-card .card-title {
+       margin: 0 0 0.833rem 1.222rem;
+      }
+ 
+      .your-users-card .card-description {
+       margin: 0 5.556rem 1.944rem 1.222rem;
+      }
+ 
+      .build-community-card {
+       width: 50%;
+       height: 28%;
+       left: 39%;
+       top: 71%;
+      }
+ 
+      .build-community-card .community-card-title {
+       font-size: 1.3611em;
+      }
+ 
+      .get-started {
+       padding: 1.167rem 5.278rem;
+      }
+ 
+      .get-started a {
+       font-size: 0.8889em;
+      }
+ 
+      .footer-content {
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding: 5.333rem 0 1.778rem;
+      }
+ 
+      .contact-left {
+       flex-basis: 35%;
+       margin: 0 1.778rem 0 2.778rem;
+      }
+ 
+      .filter-white {
+       width: 8.611rem;
+      }
+ 
+      .footer-content .contact-info {
+       font-size: 0.8333em;
+      }
+ 
+      .location-info {
+       margin: 0 4.444rem 0 1.278rem;
+      }
+ 
+      .footer-content .links-center {
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 2.667rem;
+       font-size: 0.8889em;
+       margin: 0 1.778rem 0 0;
+      }
+ 
+      .footer-content .social-media-right {
+       text-align: left;
+       padding-top: 8.889rem;
+      }
+ 
+      .footer-content .social-media-right a {
+       width: 0.556rem;
+       padding: 0.111rem 0.722rem 0.111rem 0.444rem;
+      }
+ 
+      .social-media-right .copyright {
+       margin: 12.222rem 0 0 0;
+      }
+ 
+      .social-media-right .copyright p {
+       margin: 0;
+      }
+ 
+     }
+   
+   @media only screen and (min-width: 1440px) {
+     /*Desktop styles*/
+
+     .header-area {
+      max-width: 90%;
      }
 
-     .footer-content .links-center {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 48px;
-      font-size: 0.8889em;
-      margin-right: 32px;
+     header .try-it {
+      padding: 8px 55px;
      }
 
-     .footer-content .social-media-right {
-      text-align: left;
-      padding-top: 160px;
+     .hero-title .main-description {
+      font-size: 0.8333em;
+      margin: 0 106px 25px 20px;
      }
 
-     .footer-content .social-media-right a {
-      width: 10px;
-      padding: 2px 13px 2px 8px;
+     .mockup-image img {
+      max-width: 90%;
      }
 
-     .social-media-right .copyright {
-      margin-top: 220px;
+     .hero-title .get-started {
+      margin: 0 310px 24px 20px;
+      padding: 10px 52px 15px;
      }
 
-     .social-media-right .copyright p {
-      margin: 0;
+     .hero-title .get-started a {
+      font-size: 0.75em;
+      font-weight: 700;
      }
 
     }
